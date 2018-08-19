@@ -1,0 +1,99 @@
+.jumbotron-diet-single,
+.jumbotron-recipe-single {
+  background-size: cover;
+  background-position: center;
+  box-shadow: $shadow-small;
+  color: $white-smoke;
+  word-wrap: break-word;
+  .fw-500 {
+    font-weight: 500;
+  }
+  a,
+  a:focus,
+  a:active,
+  a:hover,
+  a:link {
+    color: $white-smoke;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 110%;
+    outline: none;
+  }
+}
+
+.jumbotron-diet-single-meat {
+  background-image: url('./../images/diet-single-meat-bg.jpeg');
+}
+
+.jumbotron-diet-single-vegetarian {
+  background-image: url('./../images/diet-single-vegetarian-bg.jpeg');
+}
+
+.jumbotron-diet-single-vegan {
+  background-image: url('./../images/diet-single-vegan-bg.jpeg');
+}
+
+.jumbotron-recipe-single-meat {
+  background-image: url('./../images/recipe-single-meat-bg.jpeg');
+}
+
+.jumbotron-recipe-single-vegetarian {
+  background-image: url('./../images/recipe-single-vegetarian-bg.jpeg');
+}
+
+.jumbotron-recipe-single-vegan {
+  background-image: url('./../images/recipe-single-vegan-bg.jpeg');
+}
+
+.diet-text,
+.recipe-text {
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+.buttons-diet-single-page,
+.buttons-recipe-single-page {
+  i {
+    margin: 0 1rem;
+    padding: 0.5rem .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .remove {
+    transition: .2s;
+    border-radius: 100%;
+    &:hover {
+      background-color: $red;
+    }
+  }
+  .update {
+    transition: .2s;
+    border-radius: 100%;
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}
+
+.diet-single-avatar,
+.recipe-single-avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  box-shadow: $shadow-small;
+}
+
+.jumbotron-recipe-info {
+  box-shadow: $shadow-small;
+  background-image: url('./../images/recipe-single-info-bg.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+#charts {
+  display: none;
+  @include media-sm {
+    display: block;
+  }
+}

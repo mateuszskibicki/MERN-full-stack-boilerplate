@@ -1,0 +1,95 @@
+.login-bg {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: linear-gradient(51deg, $blue, $green-spring);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 97%
+    }
+    50% {
+      background-position: 100% 4%
+    }
+    100% {
+      background-position: 0% 97%
+    }
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0% 97%
+    }
+    50% {
+      background-position: 100% 4%
+    }
+    100% {
+      background-position: 0% 97%
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 97%
+    }
+    50% {
+      background-position: 100% 4%
+    }
+    100% {
+      background-position: 0% 97%
+    }
+  }
+}
+
+.login-page {
+  max-width: 500px;
+  width: auto;
+  padding: 5% 0 0;
+  margin: auto;
+}
+
+.form .register-form {
+  display: none;
+}
+
+.container-login {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container-login:before,
+.container-login:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container-login .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container-login .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.container-login .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+.container-login .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container-login .info span .fa {
+  color: #EF3B3A;
+}

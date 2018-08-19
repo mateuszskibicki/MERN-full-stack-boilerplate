@@ -1,0 +1,57 @@
+#profile {
+  .profile-img {
+    box-shadow: $shadow-small;
+    transition: .2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    a {
+      background-color: darken($green-spring, 10%);
+      color: $white-smoke;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      margin-right: 5px;
+      font-size: 1.3rem;
+      transition: .2s;
+      @include media-md {
+        font-size: 1.7rem;
+        width: 45px;
+        height: 45px;
+        margin-right: 8px;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $white-smoke;
+        transform: scale(1.08) translateY(-5px);
+        box-shadow: $shadow-small;
+      }
+    }
+  }
+  .profile-update-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    background-color: $green-spring;
+    border-radius: 100%;
+    color: $white-smoke;
+    font-size: 1.2rem;
+    transition: .2s;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($green-spring, 10%);
+      transform: scale(1.1);
+      box-shadow: $shadow-small;
+    }
+  }
+}

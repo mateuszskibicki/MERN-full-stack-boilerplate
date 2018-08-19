@@ -1,0 +1,61 @@
+.nav {
+  height: 100%;
+  background-color: $white-smoke;
+  display: block;
+  border: 2px solid darken($gray, 10%);
+  .nav-heading {
+    text-align: center;
+    color: $dark;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    padding: 15px 5px 5px 5px;
+    margin: 0;
+  }
+  hr {
+    margin: 3px 5px 3px 5px;
+    background-color: $gray;
+  }
+  .nav-link {
+    color: $dark;
+    transition: .4s;
+    span {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    svg {
+      font-size: 1rem;
+    }
+    &.active {
+      background-color: rgba($blue, .3);
+      span {
+        font-weight: 700;
+      }
+    }
+    &:hover {
+      background-color: rgba($blue, .5);
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    &:nth-of-type(2) {
+      justify-content: left;
+    }
+  }
+  .nav-footer {
+    color: $dark;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+    a {
+      font-weight: 500;
+    }
+  }
+}

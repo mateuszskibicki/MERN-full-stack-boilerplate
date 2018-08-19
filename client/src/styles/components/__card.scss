@@ -1,0 +1,194 @@
+.card {
+  border: 0;
+  box-shadow: $shadow-small;
+}
+
+// $red-meat: #ff6347;
+// $green-vegan: #89da59;
+// $blue--vegetarian: #11998e;
+.card-diet,
+.card-recipe {
+  margin: 40px 0px;
+  font-size: 90%;
+  @include media-xl {
+    font-size: 100%;
+  }
+  .buttons-update-remove-card {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    button {
+      margin: 2px 0px;
+      padding: 0;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+    }
+    .button-update {
+      background-color: $blue;
+    }
+    .button-remove {
+      background-color: $red;
+    }
+  }
+  .card-img-top-bg {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%; // margin: auto;
+    // transform: translateY(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card-img-top-bg-red {
+    background-color: $red-meat;
+  }
+  .card-img-top-bg-blue {
+    background-color: $blue-vegetarian;
+  }
+  .card-img-top-bg-green {
+    background-color: $green-vegan;
+  }
+  .card-img-top {
+    width: 70px;
+    height: 70px;
+  }
+  .card-body {
+    margin-top: 50px;
+    a,
+    a:link,
+    a:focus,
+    a:hover {
+      color: #6c757d;
+      text-decoration: none;
+      font-weight: 900;
+    }
+  }
+  .tag {
+    color: $white-smoke;
+    font-weight: 500;
+    padding: 1px 5px;
+    margin-right: 5px;
+  }
+  .tag-red {
+    background-color: $red-meat;
+  }
+  .tag-green {
+    background-color: $green-vegan;
+  }
+  .tag-blue {
+    background-color: $blue-vegetarian;
+  }
+  button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    width: 100%;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    border: 0;
+    padding: 14px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 900;
+    -webkit-transition: all 0.3 ease;
+    transition: 0.1s;
+    cursor: pointer;
+    &:hover {
+      outline: 0;
+      box-shadow: $shadow-small;
+      transform: scale(1.05);
+    }
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+  }
+  .button-red {
+    background-color: $red-meat;
+  }
+  .button-green {
+    background-color: $green-vegan;
+  }
+  .button-blue {
+    background-color: $blue-vegetarian;
+    ;
+  }
+  .price {
+    font-size: 0.8rem;
+    background-color: rgba($blue-vegetarian, .25);
+    padding: 0 10px;
+  }
+}
+
+.card-user {
+  margin: 25px 0px;
+  padding-top: 10px;
+  &-img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: $shadow-small;
+    transition: .2s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  a,
+  a:link,
+  a:active {
+    color: $muted;
+    transition: .2s;
+    &:hover {
+      text-decoration: none;
+      color: darken($green-spring, 10%);
+    }
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    a:not(:first-of-type) {
+      margin-left: 0.7rem;
+    }
+  }
+  &-info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    margin-top: 1rem;
+    background-color: $muted;
+    color: $white-smoke;
+    border-radius: 100%;
+    transition: .2s;
+    box-shadow: $shadow-small;
+    p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 22px;
+    }
+    .icon {
+      font-size: 1.3rem;
+    }
+    &:hover {
+      transform: scale(1.15);
+      background-color: darken($green-spring, 10%);
+    }
+  }
+}

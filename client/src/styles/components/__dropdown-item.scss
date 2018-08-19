@@ -1,0 +1,11 @@
+.dropdown-item {
+  cursor: pointer;
+  transition: .2s;
+  &:hover {
+    transform: scale(1.08);
+    background-color: darken($green-spring, 10%);
+    color: $white-smoke !important;
+    font-weight: 500;
+    box-shadow: $shadow-small;
+  }
+}

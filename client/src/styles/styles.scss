@@ -1,0 +1,35 @@
+//main
+@import './main/__mixins.scss';
+@import './main/__variables.scss';
+@import './main/__animations.scss';
+@import './main/__main.scss';
+//utils
+@import './utils/__typography.scss';
+@import './utils/__links.scss';
+@import './utils/__width.scss';
+@import './utils/__shadow.scss';
+//pages
+@import './pages/__login.scss';
+@import './pages/__diet-recipe-single.scss';
+@import './pages/__profile.scss';
+@import './pages/__users.scss';
+@import './pages/__calculators.scss';
+@import './pages/__burn-calories.scss';
+@import './pages/__find-gym.scss';
+@import './pages/__contact.scss';
+@import './pages/__about.scss';
+//components
+@import './components/__left-navbar.scss';
+@import './components/__top-navbar.scss';
+@import './components/__form.scss';
+@import './components/__button.scss';
+@import './components/__card.scss';
+@import './components/__user-content.scss';
+@import './components/__add-container.scss';
+@import './components/__comment-container.scss';
+@import './components/__comment.scss';
+@import './components/__tags.scss';
+@import './components/__dropdown-item.scss';
+@import './components/__diet-update-modal.scss';
+@import './components/__sort-by-buttons-container.scss';
+@import './components/__label-map.scss';

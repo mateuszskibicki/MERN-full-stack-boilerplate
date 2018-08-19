@@ -1,0 +1,23 @@
+.comment-container {
+  textarea {
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    background: $white-smoke;
+    width: 100%;
+    margin: 0 0 0px;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    transition: .2s;
+    border: 3px $gray solid;
+    box-shadow: $shadow-small;
+    &:focus {
+      outline: none;
+      border: 3px darken($green-spring, 10%) solid;
+    }
+  }
+  img {
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: $shadow-small;
+  }
+}

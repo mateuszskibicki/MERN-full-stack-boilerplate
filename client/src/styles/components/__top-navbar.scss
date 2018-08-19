@@ -1,0 +1,67 @@
+.navbar-top {
+  background: $red;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $red, $blue);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $red, $blue);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-bottom: 2px solid darken($gray, 10%);
+  .left {
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 30px;
+    color: $white-smoke;
+    text-shadow: 0px 2px 10px rgba(#000, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+    @media screen and (min-width: 992px) {
+      font-size: 1.8rem;
+    }
+    span {
+      font-weight: 700
+    }
+  }
+  .right {
+    padding: 10px 10px;
+    color: $white-smoke;
+    svg {
+      cursor: pointer;
+    }
+    .navbar-top-item {
+      display: flex;
+      align-items: center;
+      &:nth-of-type(1) {
+        justify-content: flex-start;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      &:nth-of-type(2) {
+        justify-content: flex-end;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 20px;
+          transition: .2s;
+          cursor: pointer;
+          &:hover {
+            box-shadow: $shadow-small;
+            transform: scale(1.1)
+          }
+        }
+      }
+    }
+  }
+}
+
+.beat-logo {
+  color: $white-smoke;
+  &:hover {
+    color: $white-smoke;
+    text-decoration: none;
+  }
+}

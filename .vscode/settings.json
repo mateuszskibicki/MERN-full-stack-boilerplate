@@ -1,0 +1,6 @@
+{
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+},
+"liveServer.settings.multiRootWorkspaceName": "BeatKcal"
+}

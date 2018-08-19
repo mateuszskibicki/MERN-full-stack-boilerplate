@@ -1,0 +1,136 @@
+.form-big {
+  width: 100% !important;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: $white-smoke;
+  margin: 0 5px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: $shadow-small;
+  @include media-sm {
+    margin: 0 10px;
+  }
+  @include media-md {
+    padding: 15px;
+  }
+  @include media-xl {
+    padding: 20px;
+    margin: 0 15px;
+  }
+  label {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: $dark;
+    padding-left: 0.7rem;
+  }
+  small {
+    margin: 0;
+    padding: 3px;
+  }
+}
+
+.form input,
+.form select,
+.form textarea,
+.form option {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: $white-smoke;
+  width: 100%;
+  border: 0;
+  margin: 0 0 0px;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  transition: .2s;
+  border-bottom: 3px darken($gray, 10%) solid;
+  &:focus {
+    background: rgba($green-spring, .2);
+    outline: none;
+    border-color: none;
+    box-shadow: $shadow-small;
+    border-bottom: 3px $green-spring solid;
+    transform: scale(1.02);
+  }
+  @include media-md {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+  }
+}
+
+.modal-form {
+  background: none;
+  border: none;
+  border-radius: none;
+}
+
+.form select {
+  padding: 0px 0px 0px 10px;
+  option {
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    padding: 3px;
+  }
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  width: 100%;
+  margin-top: 0.7rem;
+  border: 0;
+  padding: 14px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 900;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+//$red-meat
+.form .button-green {
+  background: darken($green-spring, 10%);
+  transition: .2s;
+  &:hover {
+    background: darken($green-spring, 20%);
+    box-shadow: $shadow-small;
+    transform: scale(1.05);
+  }
+}
+
+.form .button-red {
+  background: darken($red-meat, 10%);
+  transition: .2s;
+  &:hover {
+    background: darken($red-meat, 20%);
+    box-shadow: $shadow-small;
+    transform: scale(1.05);
+  }
+}
+
+.form .button-blue {
+  background: $blue;
+  transition: .2s;
+  &:hover {
+    background: darken($blue, 10%);
+    box-shadow: $shadow-small;
+    transform: scale(1.05);
+  }
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}

@@ -1,0 +1,38 @@
+$bg-img-diet: url('./../images/diet-card.jpg');
+$bg-img-recipe: url('./../images/recipe-card.jpg');
+.add-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  box-shadow: $shadow-small;
+  border-radius: 5px;
+  &-diet {
+    background-image: $bg-img-diet;
+  }
+  &-recipe {
+    background-image: $bg-img-recipe;
+  }
+  .button-add-modal {
+    font-size: 1rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    box-shadow: $shadow-small;
+    i {
+      font-size: 2rem;
+    }
+    @include media-xl {
+      font-size: 1rem;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
